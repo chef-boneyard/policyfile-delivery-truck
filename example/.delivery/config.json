@@ -1,0 +1,20 @@
+{
+  "version": "2",
+  "build_cookbook": {
+    "name": "delivery-truck",
+    "supermarket": "true"
+  },
+  "delivery-truck": {
+    "lint": {
+      "enable_cookstyle": true
+    },
+    "publish": {
+      "github": "chef-cookbooks/policyfile-delivery-truck"
+    }
+  },
+  "job_dispatch": {
+    "version": "v2"
+  },
+  "dependencies": [],
+  "skip_phases": []
+}
