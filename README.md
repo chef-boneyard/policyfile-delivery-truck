@@ -9,6 +9,8 @@ In your own project, you need to have the following:
 * Policyfile.rb - the policyfile for the application/deployment managed by Chef
 * Policyfile.lock.json - the lockfile for the policy must be commited to the repository
 
+If the lockfile is not commited to the repository, then doing a `chef install` has the potential to result in an unknown set of changes get pushed to acceptance.
+
 ## License and Author
 
 - Joshua Timberman
