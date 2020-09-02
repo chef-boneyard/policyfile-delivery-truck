@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: policyfile-delivery-truck
+# Cookbook:: policyfile-delivery-truck
 # Recipe:: functional
 #
 # Copyright:: 2016-2018, Chef Software Inc.
@@ -22,5 +22,5 @@ execute 'functional_inspec' do
   command 'inspec exec default_spec.rb'
   cwd repo_path('inspec')
   environment('STAGE' => change.stage)
-  only_if { File.exist?(repo_path('inspec/default_spec.rb')) }
+  only_if { ::File.exist?(repo_path('inspec/default_spec.rb')) }
 end
