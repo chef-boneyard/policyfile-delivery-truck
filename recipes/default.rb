@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: policyfile-delivery-truck
+# Cookbook:: policyfile-delivery-truck
 # Recipe:: default
 #
 # Copyright:: 2016-2018, Chef Software Inc.

@@ -103,6 +103,6 @@ module PolicyfileDeliveryTruck
 end
 
 # And these mix the DSL methods into the Chef infrastructure
-Chef::Recipe.send(:include, PolicyfileDeliveryTruck::DSL)
-Chef::Resource.send(:include, PolicyfileDeliveryTruck::DSL)
-Chef::Provider.send(:include, PolicyfileDeliveryTruck::DSL)
+Chef::Recipe.include PolicyfileDeliveryTruck::DSL
+Chef::Resource.include PolicyfileDeliveryTruck::DSL
+Chef::Provider.include PolicyfileDeliveryTruck::DSL
